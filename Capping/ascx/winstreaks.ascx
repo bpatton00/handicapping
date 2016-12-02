@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" Inherits="ascx_winstreaks" Codebehind="winstreaks.ascx.cs" %>
+    <asp:GridView ID="GridViewWins" runat="server" CssClass="table alumnbg table-hover table-condensed" PagerStyle-CssClass="pgr" HeaderStyle-CssClass="active" GridLines="None"></asp:GridView>

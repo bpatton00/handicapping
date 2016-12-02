@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" Inherits="ascx_tips" Codebehind="tips.ascx.cs" %>
+<asp:GridView ID="GridViewTips" runat="server" CssClass="table alumnbg table-hover table-condensed" PagerStyle-CssClass="pgr" HeaderStyle-CssClass="active" GridLines="None"></asp:GridView>
