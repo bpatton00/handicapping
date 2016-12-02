@@ -1,0 +1,496 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="data">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="racedata"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="racedata">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="race"/>
+        <xs:element ref="todays_cls"/>
+        <xs:element ref="distance"/>
+        <xs:element ref="dist_unit"/>
+        <xs:element ref="course_id"/>
+        <xs:element ref="surface"/>
+        <xs:element ref="stkorclm"/>
+        <xs:element ref="purse"/>
+        <xs:element ref="claimamt"/>
+        <xs:element ref="age_restr"/>
+        <xs:element ref="bet_opt"/>
+        <xs:element ref="track"/>
+        <xs:element ref="send_track"/>
+        <xs:element ref="raceord"/>
+        <xs:element ref="partim"/>
+        <xs:element ref="dist_disp"/>
+        <xs:element ref="breed_type"/>
+        <xs:element ref="post_time"/>
+        <xs:element ref="race_date"/>
+        <xs:element ref="race_text"/>
+        <xs:element ref="stk_clm_md"/>
+        <xs:element ref="country"/>
+        <xs:element maxOccurs="unbounded" ref="horsedata"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="race" type="xs:integer"/>
+  <xs:element name="dist_unit" type="xs:NCName"/>
+  <xs:element name="course_id" type="xs:NCName"/>
+  <xs:element name="stkorclm" type="xs:NCName"/>
+  <xs:element name="claimamt" type="xs:integer"/>
+  <xs:element name="age_restr" type="xs:NMTOKEN"/>
+  <xs:element name="bet_opt" type="xs:string"/>
+  <xs:element name="track" type="xs:NCName"/>
+  <xs:element name="send_track" type="xs:NCName"/>
+  <xs:element name="raceord" type="xs:integer"/>
+  <xs:element name="partim" type="xs:decimal"/>
+  <xs:element name="dist_disp" type="xs:string"/>
+  <xs:element name="post_time" type="xs:string"/>
+  <xs:element name="race_date" type="xs:integer"/>
+  <xs:element name="race_text" type="xs:string"/>
+  <xs:element name="stk_clm_md" type="xs:NCName"/>
+  <xs:element name="horsedata">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="horse_name"/>
+        <xs:element ref="owner_name"/>
+        <xs:element ref="program"/>
+        <xs:element ref="pp"/>
+        <xs:element ref="todays_cls"/>
+        <xs:element ref="avg_spd_sd"/>
+        <xs:element ref="ave_cl_sd"/>
+        <xs:element ref="hi_spd_sd"/>
+        <xs:element ref="foal_date"/>
+        <xs:element ref="pstyerl"/>
+        <xs:element ref="pstymid"/>
+        <xs:element ref="pstyfin"/>
+        <xs:element ref="pstynum"/>
+        <xs:element ref="pstyoff"/>
+        <xs:element ref="psprstyerl"/>
+        <xs:element ref="psprstymid"/>
+        <xs:element ref="psprstyfin"/>
+        <xs:element ref="psprstynum"/>
+        <xs:element ref="psprstyoff"/>
+        <xs:element ref="prtestyerl"/>
+        <xs:element ref="prtestymid"/>
+        <xs:element ref="prtestyfin"/>
+        <xs:element ref="prtestynum"/>
+        <xs:element ref="prtestyoff"/>
+        <xs:element ref="pallstyerl"/>
+        <xs:element ref="pallstymid"/>
+        <xs:element ref="pallstyfin"/>
+        <xs:element ref="pallstynum"/>
+        <xs:element ref="pallstyoff"/>
+        <xs:element ref="pfigerl"/>
+        <xs:element ref="pfigmid"/>
+        <xs:element ref="pfigfin"/>
+        <xs:element ref="pfignum"/>
+        <xs:element ref="pfigoff"/>
+        <xs:element ref="psprfigerl"/>
+        <xs:element ref="psprfigmid"/>
+        <xs:element ref="psprfigfin"/>
+        <xs:element ref="psprfignum"/>
+        <xs:element ref="psprfigoff"/>
+        <xs:element ref="prtefigerl"/>
+        <xs:element ref="prtefigmid"/>
+        <xs:element ref="prtefigfin"/>
+        <xs:element ref="prtefignum"/>
+        <xs:element ref="prtefigoff"/>
+        <xs:element ref="pallfigerl"/>
+        <xs:element ref="pallfigmid"/>
+        <xs:element ref="pallfigfin"/>
+        <xs:element ref="pallfignum"/>
+        <xs:element ref="pallfigoff"/>
+        <xs:element ref="tmmark"/>
+        <xs:element ref="av_pur_val"/>
+        <xs:element ref="weight"/>
+        <xs:element ref="wght_shift"/>
+        <xs:element ref="cldate"/>
+        <xs:element ref="price"/>
+        <xs:element ref="bought_fr"/>
+        <xs:element ref="sex"/>
+        <xs:element ref="power"/>
+        <xs:element ref="med"/>
+        <xs:element ref="equip"/>
+        <xs:element ref="morn_odds"/>
+        <xs:element ref="breeder"/>
+        <xs:element ref="wh_foaled"/>
+        <xs:element ref="ae_flag"/>
+        <xs:element ref="color"/>
+        <xs:element ref="power_symb"/>
+        <xs:element ref="horse_comm"/>
+        <xs:element ref="breed_type"/>
+        <xs:element ref="lst_salena"/>
+        <xs:element ref="lst_salepr"/>
+        <xs:element ref="lst_saleda"/>
+        <xs:element ref="claimprice"/>
+        <xs:element ref="avgspd"/>
+        <xs:element ref="avgcls"/>
+        <xs:element minOccurs="0" ref="apprweight"/>
+        <xs:element minOccurs="0" ref="axciskey"/>
+        <xs:element ref="stats_data"/>
+        <xs:element ref="sire"/>
+        <xs:element ref="dam"/>
+        <xs:element ref="jockey"/>
+        <xs:element ref="trainer"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="workoutdata"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="ppdata"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="horse_name" type="xs:string"/>
+  <xs:element name="owner_name" type="xs:string"/>
+  <xs:element name="program" type="xs:string" />
+  <xs:element name="pp" type="xs:integer"/>
+  <xs:element name="avg_spd_sd" type="xs:NMTOKEN"/>
+  <xs:element name="ave_cl_sd" type="xs:NMTOKEN"/>
+  <xs:element name="hi_spd_sd" type="xs:NMTOKEN"/>
+  <xs:element name="foal_date" type="xs:integer"/>
+  <xs:element name="pstyerl" type="xs:decimal"/>
+  <xs:element name="pstymid" type="xs:decimal"/>
+  <xs:element name="pstyfin" type="xs:decimal"/>
+  <xs:element name="pstynum" type="xs:integer"/>
+  <xs:element name="pstyoff" type="xs:integer"/>
+  <xs:element name="psprstyerl" type="xs:decimal"/>
+  <xs:element name="psprstymid" type="xs:decimal"/>
+  <xs:element name="psprstyfin" type="xs:decimal"/>
+  <xs:element name="psprstynum" type="xs:integer"/>
+  <xs:element name="psprstyoff" type="xs:integer"/>
+  <xs:element name="prtestyerl" type="xs:decimal"/>
+  <xs:element name="prtestymid" type="xs:decimal"/>
+  <xs:element name="prtestyfin" type="xs:decimal"/>
+  <xs:element name="prtestynum" type="xs:integer"/>
+  <xs:element name="prtestyoff" type="xs:integer"/>
+  <xs:element name="pallstyerl" type="xs:decimal"/>
+  <xs:element name="pallstymid" type="xs:decimal"/>
+  <xs:element name="pallstyfin" type="xs:decimal"/>
+  <xs:element name="pallstynum" type="xs:integer"/>
+  <xs:element name="pallstyoff" type="xs:integer"/>
+  <xs:element name="pfigerl" type="xs:decimal"/>
+  <xs:element name="pfigmid" type="xs:decimal"/>
+  <xs:element name="pfigfin" type="xs:decimal"/>
+  <xs:element name="pfignum" type="xs:integer"/>
+  <xs:element name="pfigoff" type="xs:integer"/>
+  <xs:element name="psprfigerl" type="xs:decimal"/>
+  <xs:element name="psprfigmid" type="xs:decimal"/>
+  <xs:element name="psprfigfin" type="xs:decimal"/>
+  <xs:element name="psprfignum" type="xs:integer"/>
+  <xs:element name="psprfigoff" type="xs:integer"/>
+  <xs:element name="prtefigerl" type="xs:decimal"/>
+  <xs:element name="prtefigmid" type="xs:decimal"/>
+  <xs:element name="prtefigfin" type="xs:decimal"/>
+  <xs:element name="prtefignum" type="xs:integer"/>
+  <xs:element name="prtefigoff" type="xs:integer"/>
+  <xs:element name="pallfigerl" type="xs:decimal"/>
+  <xs:element name="pallfigmid" type="xs:decimal"/>
+  <xs:element name="pallfigfin" type="xs:decimal"/>
+  <xs:element name="pallfignum" type="xs:integer"/>
+  <xs:element name="pallfigoff" type="xs:integer"/>
+  <xs:element name="av_pur_val" type="xs:decimal"/>
+  <xs:element name="weight" type="xs:integer"/>
+  <xs:element name="wght_shift" type="xs:integer"/>
+  <xs:element name="cldate" type="xs:string"/>
+  <xs:element name="price" type="xs:integer"/>
+  <xs:element name="bought_fr" type="xs:string"/>
+  <xs:element name="sex" type="xs:NCName"/>
+  <xs:element name="power" type="xs:decimal"/>
+  <xs:element name="med" type="xs:string"/>
+  <xs:element name="equip" type="xs:string"/>
+  <xs:element name="morn_odds" type="xs:string"/>
+  <xs:element name="breeder" type="xs:string"/>
+  <xs:element name="wh_foaled" type="xs:string"/>
+  <xs:element name="ae_flag" type="xs:string"/>
+  <xs:element name="color" type="xs:string"/>
+  <xs:element name="power_symb" type="xs:string"/>
+  <xs:element name="horse_comm" type="xs:string"/>
+  <xs:element name="lst_salena" type="xs:string"/>
+  <xs:element name="lst_salepr" type="xs:decimal"/>
+  <xs:element name="lst_saleda" type="xs:integer"/>
+  <xs:element name="avgspd" type="xs:integer"/>
+  <xs:element name="avgcls" type="xs:integer"/>
+  <xs:element name="sire">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="stat_breed"/>
+        <xs:element ref="sirename"/>
+        <xs:element ref="tmmark"/>
+        <xs:element ref="stud_fee"/>
+        <xs:element ref="stats_data"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sirename" type="xs:string"/>
+  <xs:element name="stud_fee" type="xs:integer"/>
+  <xs:element name="dam">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="stat_breed"/>
+        <xs:element ref="damname"/>
+        <xs:element ref="damsire"/>
+        <xs:element ref="stats_data"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="damname" type="xs:string"/>
+  <xs:element name="damsire" type="xs:string"/>
+  <xs:element name="jockey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="stat_breed"/>
+        <xs:element ref="jock_disp"/>
+        <xs:element minOccurs="0" ref="jock_key"/>
+        <xs:element minOccurs="0" ref="j_type"/>                
+        <xs:element ref="stats_data"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="jock_disp" type="xs:string"/>
+  <xs:element name="jock_key" type="xs:string"/>
+  <xs:element name="j_type" type="xs:string"/>
+  <xs:element name="trainer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="stat_breed"/>
+        <xs:element ref="tran_disp"/>
+        <xs:element minOccurs="0" ref="train_key"/>
+        <xs:element minOccurs="0" ref="t_type"/>        
+        <xs:element ref="stats_data"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tran_disp" type="xs:string"/>
+  <xs:element name="train_key" type="xs:string"/>
+  <xs:element name="t_type" type="xs:string"/>
+  <xs:element name="workoutdata">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="worknum"/>
+        <xs:element ref="days_back"/>
+        <xs:element ref="worktext"/>
+        <xs:element ref="ranking"/>
+        <xs:element ref="rank_group"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="worknum" type="xs:integer"/>
+  <xs:element name="days_back" type="xs:integer"/>
+  <xs:element name="worktext" type="xs:string"/>
+  <xs:element name="ranking" type="xs:integer"/>
+  <xs:element name="rank_group" type="xs:integer"/>
+  <xs:element name="ppdata">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="racedate"/>
+        <xs:element ref="trackcode"/>
+        <xs:element ref="trackname"/>
+        <xs:element ref="racenumber"/>
+        <xs:element ref="racebreed"/>
+        <xs:element ref="country"/>
+        <xs:element ref="racetype"/>
+        <xs:element ref="raceclass"/>
+        <xs:element ref="claimprice"/>
+        <xs:element ref="purse"/>
+        <xs:element ref="classratin"/>
+        <xs:element ref="trackcondi"/>
+        <xs:element ref="distance"/>
+        <xs:element ref="disttype"/>
+        <xs:element ref="aboutdist"/>
+        <xs:element ref="courseid"/>
+        <xs:element ref="surface"/>
+        <xs:element ref="pulledofft"/>
+        <xs:element ref="winddirect"/>
+        <xs:element ref="windspeed"/>
+        <xs:element ref="trackvaria"/>
+        <xs:element ref="sealedtrac"/>
+        <xs:element ref="racegrade"/>
+        <xs:element ref="agerestric"/>
+        <xs:element ref="sexrestric"/>
+        <xs:element ref="statebredr"/>
+        <xs:element ref="abbrevcond"/>
+        <xs:element ref="postpositi"/>
+        <xs:element ref="favorite"/>
+        <xs:element ref="weightcarr"/>
+        <xs:element ref="jockfirst"/>
+        <xs:element ref="jockmiddle"/>
+        <xs:element ref="jocklast"/>
+        <xs:element ref="jocksuffix"/>
+        <xs:element ref="jockdisp"/>
+        <xs:element ref="equipment"/>
+        <xs:element ref="medication"/>
+        <xs:element ref="fieldsize"/>
+        <xs:element ref="posttimeod"/>
+        <xs:element ref="shortcomme"/>
+        <xs:element ref="longcommen"/>
+        <xs:element ref="gatebreak"/>
+        <xs:element ref="position1"/>
+        <xs:element ref="lenback1"/>
+        <xs:element ref="horsetime1"/>
+        <xs:element ref="leadertime"/>
+        <xs:element ref="pacefigure"/>
+        <xs:element ref="position2"/>
+        <xs:element ref="lenback2"/>
+        <xs:element ref="horsetime2"/>
+        <xs:element ref="leadertim2"/>
+        <xs:element ref="pacefigur2"/>
+        <xs:element ref="positionst"/>
+        <xs:element ref="lenbackstr"/>
+        <xs:element ref="horsetimes"/>
+        <xs:element ref="leadertim3"/>
+        <xs:element ref="dqindicato"/>
+        <xs:element ref="positionfi"/>
+        <xs:element ref="lenbackfin"/>
+        <xs:element ref="horsetimef"/>
+        <xs:element ref="leadertim4"/>
+        <xs:element ref="speedfigur"/>
+        <xs:element ref="turffigure"/>
+        <xs:element ref="winnersspe"/>
+        <xs:element ref="foreignspe"/>
+        <xs:element ref="horseclaim"/>
+        <xs:element ref="biasstyle"/>
+        <xs:element ref="biaspath"/>
+        <xs:element ref="complineho"/>
+        <xs:element ref="complinele"/>
+        <xs:element ref="complinewe"/>
+        <xs:element ref="complinedq"/>
+        <xs:element ref="complineh2"/>
+        <xs:element ref="complinel2"/>
+        <xs:element ref="complinew2"/>
+        <xs:element ref="complined2"/>
+        <xs:element ref="complineh3"/>
+        <xs:element ref="complinel3"/>
+        <xs:element ref="complinew3"/>
+        <xs:element ref="complined3"/>
+        <xs:element ref="linebefore"/>
+        <xs:element ref="lineafter"/>
+        <xs:element ref="domesticpp"/>
+        <xs:element ref="oflfinish"/>
+        <xs:element minOccurs="0" ref="runup_dist"/>
+        <xs:element minOccurs="0" ref="rail_dist"/>
+        <xs:element minOccurs="0" ref="apprweight"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="racedate" type="xs:integer"/>
+  <xs:element name="trackcode" type="xs:string"/>
+  <xs:element name="trackname" type="xs:string"/>
+  <xs:element name="racenumber" type="xs:integer"/>
+  <xs:element name="racebreed" type="xs:string"/>
+  <xs:element name="racetype" type="xs:string"/>
+  <xs:element name="raceclass" type="xs:string"/>
+  <xs:element name="classratin" type="xs:integer"/>
+  <xs:element name="trackcondi" type="xs:string"/>
+  <xs:element name="disttype" type="xs:string"/>
+  <xs:element name="aboutdist" type="xs:string"/>
+  <xs:element name="courseid" type="xs:NCName"/>
+  <xs:element name="pulledofft" type="xs:integer"/>
+  <xs:element name="winddirect" type="xs:string"/>
+  <xs:element name="windspeed" type="xs:integer"/>
+  <xs:element name="trackvaria" type="xs:integer"/>
+  <xs:element name="sealedtrac" type="xs:string"/>
+  <xs:element name="racegrade" type="xs:integer"/>
+  <xs:element name="agerestric" type="xs:string"/>
+  <xs:element name="sexrestric" type="xs:string"/>
+  <xs:element name="statebredr" type="xs:string"/>
+  <xs:element name="abbrevcond" type="xs:string"/>
+  <xs:element name="postpositi" type="xs:integer"/>
+  <xs:element name="favorite" type="xs:integer"/>
+  <xs:element name="weightcarr" type="xs:integer"/>
+  <xs:element name="jockfirst" type="xs:string"/>
+  <xs:element name="jockmiddle" type="xs:string"/>
+  <xs:element name="jocklast" type="xs:string"/>
+  <xs:element name="jocksuffix" type="xs:string"/>
+  <xs:element name="jockdisp" type="xs:string"/>
+  <xs:element name="equipment" type="xs:string"/>
+  <xs:element name="medication" type="xs:string"/>
+  <xs:element name="fieldsize" type="xs:integer"/>
+  <xs:element name="posttimeod" type="xs:decimal"/>
+  <xs:element name="shortcomme" type="xs:string"/>
+  <xs:element name="longcommen" type="xs:string"/>
+  <xs:element name="gatebreak" type="xs:integer"/>
+  <xs:element name="position1" type="xs:integer"/>
+  <xs:element name="lenback1" type="xs:decimal"/>
+  <xs:element name="horsetime1" type="xs:decimal"/>
+  <xs:element name="leadertime" type="xs:decimal"/>
+  <xs:element name="pacefigure" type="xs:integer"/>
+  <xs:element name="position2" type="xs:integer"/>
+  <xs:element name="lenback2" type="xs:decimal"/>
+  <xs:element name="horsetime2" type="xs:decimal"/>
+  <xs:element name="leadertim2" type="xs:decimal"/>
+  <xs:element name="pacefigur2" type="xs:integer"/>
+  <xs:element name="positionst" type="xs:integer"/>
+  <xs:element name="lenbackstr" type="xs:decimal"/>
+  <xs:element name="horsetimes" type="xs:decimal"/>
+  <xs:element name="leadertim3" type="xs:decimal"/>
+  <xs:element name="dqindicato" type="xs:string"/>
+  <xs:element name="positionfi" type="xs:integer"/>
+  <xs:element name="lenbackfin" type="xs:decimal"/>
+  <xs:element name="horsetimef" type="xs:decimal"/>
+  <xs:element name="leadertim4" type="xs:decimal"/>
+  <xs:element name="speedfigur" type="xs:integer"/>
+  <xs:element name="turffigure" type="xs:decimal"/>
+  <xs:element name="winnersspe" type="xs:integer"/>
+  <xs:element name="foreignspe" type="xs:integer"/>
+  <xs:element name="horseclaim" type="xs:integer"/>
+  <xs:element name="biasstyle" type="xs:string"/>
+  <xs:element name="biaspath" type="xs:string"/>
+  <xs:element name="complineho" type="xs:string"/>
+  <xs:element name="complinele" type="xs:decimal"/>
+  <xs:element name="complinewe" type="xs:integer"/>
+  <xs:element name="complinedq" type="xs:string"/>
+  <xs:element name="complineh2" type="xs:string"/>
+  <xs:element name="complinel2" type="xs:decimal"/>
+  <xs:element name="complinew2" type="xs:integer"/>
+  <xs:element name="complined2" type="xs:string"/>
+  <xs:element name="complineh3" type="xs:string"/>
+  <xs:element name="complinel3" type="xs:decimal"/>
+  <xs:element name="complinew3" type="xs:integer"/>
+  <xs:element name="complined3" type="xs:string"/>
+  <xs:element name="linebefore" type="xs:string"/>
+  <xs:element name="lineafter" type="xs:string"/>
+  <xs:element name="domesticpp" type="xs:integer"/>
+  <xs:element name="oflfinish" type="xs:integer"/>
+  <xs:element name="runup_dist" type="xs:integer"/>
+  <xs:element name="rail_dist" type="xs:integer"/>
+  <xs:element name="todays_cls" type="xs:integer"/>
+  <xs:element name="distance" type="xs:decimal"/>
+  <xs:element name="surface" type="xs:NCName"/>
+  <xs:element name="purse" type="xs:integer"/>
+  <xs:element name="breed_type" type="xs:NCName"/>
+  <xs:element name="country" type="xs:NCName"/>
+  <xs:element name="tmmark" type="xs:string"/>
+  <xs:element name="claimprice" type="xs:integer"/>
+  <xs:element name="apprweight" type="xs:integer"/>
+  <xs:element name="axciskey" type="xs:string"/>
+  <xs:element name="stats_data">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="stat"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="stat">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="starts"/>
+        <xs:element ref="wins"/>
+        <xs:element ref="places"/>
+        <xs:element ref="shows"/>
+        <xs:element ref="earnings"/>
+        <xs:element ref="paid"/>
+        <xs:element ref="roi"/>
+      </xs:sequence>
+      <xs:attribute name="type" use="required" type="xs:NMTOKEN"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="starts" type="xs:integer"/>
+  <xs:element name="wins" type="xs:integer"/>
+  <xs:element name="places" type="xs:integer"/>
+  <xs:element name="shows" type="xs:integer"/>
+  <xs:element name="earnings" type="xs:string"/>
+  <xs:element name="paid" type="xs:decimal"/>
+  <xs:element name="roi" type="xs:string"/>
+  <xs:element name="stat_breed" type="xs:NCName"/>
+</xs:schema>
