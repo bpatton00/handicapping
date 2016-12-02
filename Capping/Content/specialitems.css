@@ -1,0 +1,12 @@
+﻿body {
+}
+
+.winstreak {
+    font-size:.7em;
+    border: 1px solid rgb(2, 15, 9);
+    background: #05792F;
+    color: white;
+    border-radius:5px;
+    padding:.1em .3em;
+    text-shadow:none;
+}

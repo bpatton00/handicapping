@@ -1,0 +1,65 @@
+﻿ .blanket
+    {
+        border:1px solid #a3a3a3;
+        text-align:center;
+          background-attachment: scroll;
+          background-clip: border-box;
+          background-color: rgb(182, 61, 19);
+          background-image: linear-gradient(rgba(255, 255, 255, 0.6) 0px, rgba(229, 229, 229, 0) 8%, rgba(86, 86, 86, 0.168627) 52%, rgba(18, 18, 18, 0.168627) 90%, rgba(0, 0, 0, 0.6) 100%);
+          background-origin: padding-box;
+          background-position: 100% 0%;
+          background-repeat: no-repeat;
+          background-size: auto;
+          color: rgb(0, 0, 0);
+          display: inline-block;
+          font-size: 17px;
+          font-weight: bolder;
+          height: 27px;
+          line-height: 27px;
+          text-align: center;
+          text-decoration: none;
+          width: 27px;
+          zoom: 1;
+          font-family: trajan-sans-pro;
+    }
+ .blanket_s {
+     height:14px;
+     width:18px;
+     line-height: 14px;
+     font-size:13px;
+ }
+/*horse bib colors */
+.horse01, .horse01 td, .horse01:hover td { background-color:Red; color:White !important;}
+.horse02, .horse02 td, .horse02:hover td { background-color:White; color:Black !important;}
+.horse03, .horse03 td, .horse03:hover td { background-color:Blue; color: White !important;}
+.horse04, .horse04 td, .horse04:hover td { background-color:Yellow; color: Black !important;}
+.horse05, .horse05 td, .horse05:hover td { background-color:Green; color:White !important;}
+.horse06, .horse06 td, .horse06:hover td { background-color:Black; color:White !important;}
+/*Orange */
+.horse07, .horse07 td, .horse07:hover td { background-color:#ff6600; color:Black !important;}
+/*Pink */
+.horse08, .horse08 td, .horse08:hover td { background-color:#ff00ff; color:Black !important;}
+/*Turqoise */
+.horse09, .horse09 td, .horse09:hover td { background-color:#0066ff; color:Black !important;}
+/*Purple*/
+.horse10, .horse10 td, .horse10:hover td { background-color:#330066; color:White !important;}
+/*Gray */
+.horse11, .horse11 td, .horse11:hover td { background-color:#999999; color:Red !important;}
+/*Lime */
+.horse12, .horse12 td, .horse12:hover td { background-color:#66cc33; color:Black !important;}
+/*Brown */
+.horse13, .horse13 td, .horse13:hover td { background-color:#694527; color:White !important;}
+/*Maroon */
+.horse14, .horse14 td, .horse14:hover td { background-color:#800000; color:White !important;}
+/*Khaki */
+.horse15, .horse15 td, .horse15:hover td { background-color:#F0E68C; color:Black !important;}
+/*copen blue */
+.horse16, .horse16 td, .horse16:hover td { background-color:#417199; color:White !important;}
+/*navy */
+.horse17, .horse17 td, .horse17:hover td { background-color:#000080; color:White !important;}
+/*Forest Green */
+.horse18, .horse18 td, .horse18:hover td { background-color:#228B22; color:White !important;}
+/*Moonstone */
+.horse19, .horse19 td, .horse19:hover td { background-color:#73A9C2; color:White !important;}
+/*Fuchsia */
+.horse20, .horse20 td, .horse20:hover td { background-color:Fuchsia; color:Black !important;}
